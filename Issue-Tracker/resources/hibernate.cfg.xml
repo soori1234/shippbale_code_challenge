@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory name = "sessionFactory">
+		<property name="hbm2ddl.auto" >
+			validate
+		</property>
+		<property name="dialect">
+			org.hibernate.dialect.MySQLInnoDBDialect
+		</property>
+		
+		<property name="connection.url">
+			jdbc:mysql://localhost:3306/shippable
+		</property>
+		
+		 <property name="connection.username">root</property>
+		<property name="connection.password"></property> 
+		
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+	
+		 <!-- <property name="hibernate.current_session_context_class">thread</property> -->
+		 <property name="hibernate.current_session_context_class">org.hibernate.context.internal.ThreadLocalSessionContext</property>
+
+		<mapping class="com.shippable.dto.User" />
+		<mapping class="com.shippable.dto.Issue" />
+	</session-factory>
+
+</hibernate-configuration>  
