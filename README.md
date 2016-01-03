@@ -1,4 +1,4 @@
-# shippaba]le_code_challenge
+# shippbale_code_challenge
 
 ##Required Softwares:
 1. JDK 1.7 or later
