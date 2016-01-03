@@ -5,6 +5,11 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+
+/**
+ * @author Soori Babu Meesala
+ *  This class is used to get the hibernate session to access the database
+ */
 public class HibernateUtil {
 
 	private static final SessionFactory sessionFactory;  

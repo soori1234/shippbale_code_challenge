@@ -1,4 +1,5 @@
 
+
 <%@ include file="init.jsp" %>
 
 <%
@@ -34,12 +35,26 @@
  // for(Issue issue: issuesList)
     {
 	 Issue issue = issuesList.get(i);
+	 
+	 //this code is to get elapsed time in days, hours, minutes
+	 long minutesInMilli = 1000*60;
+	 long hoursInMilli = minutesInMilli*60;
+	 long daysInMilli = hoursInMilli*24;
+	 Date curDate = new Date();
+	 long timeDifference = curDate.getTime()-issue.getCreationDate().getTime();
+	 long elapsedDays = timeDifference / daysInMilli;
+	 timeDifference = timeDifference % daysInMilli;
+	 long elapsedHours = timeDifference / hoursInMilli;
+	 timeDifference = timeDifference % hoursInMilli;
+	 long elapsedMinutes = timeDifference / minutesInMilli;
+	 
     	%>
     	<tr>
     		<td>
     			<h2><b><a href= "issue-details?issueId=<%=issue.getIssueId()%>"><%=issue.getIssueTitle() %></a></b></h2><br>
-    			<h4>#<%=issue.getIssueId() %> opened on <%=issue.getCreationDate() %> by <%=issue.getUserName() %> </h4>
-    			
+    			<h4>#<%=issue.getIssueId() %> </h4>
+    			<h4>opened on<%if(elapsedDays >0){	%>
+    			 <%=elapsedDays %> days<% 	}%> <%=elapsedHours %> hours <%=elapsedMinutes %> minutes ago by <%=issue.getUserName() %> </h4>
     		</td>
   		</tr>
     	<%

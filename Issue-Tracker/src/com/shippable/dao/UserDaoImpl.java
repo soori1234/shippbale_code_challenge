@@ -11,9 +11,6 @@ import org.springframework.stereotype.Repository;
 import com.shippable.dto.User;
 import com.shippable.util.HibernateUtil;
 
-
-
-
 /**
  * @author Soori Babu Meesala
  *

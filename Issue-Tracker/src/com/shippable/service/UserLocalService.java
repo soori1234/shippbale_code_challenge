@@ -5,6 +5,11 @@ import java.util.List;
 
 import com.shippable.dto.User;
 
+
+/**
+ * @author Soori Babu Meesala
+ *
+ */
 public interface UserLocalService {
 	
 	public User saveUser(User user);

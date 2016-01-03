@@ -10,6 +10,11 @@ import com.shippable.constants.IssueTrackerConstants;
 import com.shippable.dao.IssueDao;
 import com.shippable.dto.Issue;
 
+
+/**
+ * @author Soori Babu Meesala
+ *
+ */
 @Service
 public class IssueLocalServiceImpl implements IssueLocalService{
 

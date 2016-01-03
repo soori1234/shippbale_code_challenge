@@ -5,6 +5,11 @@ import java.util.List;
 
 import com.shippable.dto.Issue;
 
+
+/**
+ * @author Soori Babu Meesala
+ *
+ */
 public interface IssueLocalService {
 	public Issue saveIssue(Issue issue);
 	public Issue getIssue(Issue issue);
