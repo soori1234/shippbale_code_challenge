@@ -33,7 +33,11 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
-
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>0.5.7</version>
+			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
@@ -49,11 +53,11 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-	    <groupId>javax.validation</groupId>
-	    <artifactId>validation-api</artifactId>
-	   <version>1.0.0.GA</version>
-        </dependency>
-		
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+
 		<!-- spring dependencies -->
 		<dependency>
 			<groupId>org.springframework</groupId>
