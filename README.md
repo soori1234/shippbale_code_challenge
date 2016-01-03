@@ -8,9 +8,10 @@
 ##Technologies used are:
 1. Spring MVC 4.2.4
 2. Hibernate 4.2.21
-3. JSP
-4. MySQL
-5. JavaScript
+3. Java
+4. JSP
+5. MySQL
+6. JavaScript
 
 ###How to Install
 1. Checkout the code from the repository to the local machine
@@ -31,6 +32,12 @@
 8. Issue Details display
 9. User Logout
 
+## Future Extension If given more time
+1. Role based accessing like admin user, site user, guest, content reviewer
+2. Issue Status Changing from Open to Close
+3. Enabling comments
+4. Deleting the issues and users from database
+5. Issue Filtering based on custom query
 
 
 
