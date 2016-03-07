@@ -1,4 +1,4 @@
-# shippbale_code_challenge
+# Spring 4.x and Hibernate 4.x example
 
 ##Required Softwares:
 1. JDK 1.7 or later
